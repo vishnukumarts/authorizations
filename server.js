@@ -31,7 +31,7 @@ app.post('/login', (req, res) => {
   // 3. JWT
   const token = jwt.sign({ username }, SECRET, { expiresIn: '1h' });
 
-  res.json({ message: 'Logged in!' });
+  res.json({ message: 'Logged in!' , token : token});
 });
 
 // Endpoint to check cookie
