@@ -8,7 +8,7 @@ const app = express();
 const SECRET = 'my-secret-key';
 const PORT = 3000;
 
-// Middleware
+// Middleware parsers
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(session({
